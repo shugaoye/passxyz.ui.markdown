@@ -3,7 +3,7 @@ var PassXYZ_Notes = require ('simplemde');
 var Notes = new PassXYZ_Notes({
     autofocus: true,
     element: document.getElementById("demo1"),
-    hideIcons: ["guide", "heading", "side-by-side"],
+    hideIcons: ["guide", "heading", "side-by-side", "link", "image", "quote"],
     spellChecker: false,
     lineWrapping: true,
 });
