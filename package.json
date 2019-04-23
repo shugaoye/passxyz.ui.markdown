@@ -1,0 +1,21 @@
+{
+  "name": "PassXYZ.UI.Markdown",
+  "version": "1.0.0",
+  "description": "Markdown editor for PassXYZ",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shugaoye/passxyz.ui.markdown.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-dev": "browserify ./source/app.js > ./dist/px_markdown.js",
+    "build": "cp source/markdown.html dist/px_markdown.html; browserify ./source/app.js | uglifyjs > ./dist/px_markdown.js"
+  },
+  "keywords": [],
+  "author": "Roger Ye",
+  "license": "Apache",
+  "dependencies": {
+    "simplemde": "^1.11.2"
+  }
+}
