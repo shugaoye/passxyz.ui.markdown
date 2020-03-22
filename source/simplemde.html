@@ -53,14 +53,17 @@ Unordered lists can be started using the toolbar or by typing `* `, `- `, or `+ 
 
 </section>
 
-<link rel="stylesheet" href="../node_modules/simplemde/dist/simplemde.min.css">
-<script src="../node_modules/simplemde/dist/simplemde.min.js"></script>
+<link rel="stylesheet" href="../node_modules/easymde/dist/easymde.min.css">
+<script src="../node_modules/easymde/dist/easymde.min.js"></script>
 <script>
-	new SimpleMDE({
+	var passxyz_notes = new EasyMDE({
 		element: document.getElementById("demo1"),
 		spellChecker: false,
+		toolbar: ["bold", "italic", "heading", "|", "unordered-list", "ordered-list", "preview", "fullscreen"],
 	});
 	
+	passxyz_notes.toggleFullScreen();
+	passxyz_notes.togglePreview();
 </script>
 </body>
 </html>
