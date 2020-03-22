@@ -6,7 +6,7 @@ This component is depended on [EasyMDE](https://github.com/Ionaru/easy-markdown-
 yarn install
 
 # Run in watch mode
-yarn watch
+yarn start
 
 # Run in production mode
 yarn build 
